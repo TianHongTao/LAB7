@@ -9,7 +9,7 @@ void  ParamConf1()
 	cout << "请您输入新的路径" << endl;
 	while (cin >> UserRequestFilePaths)
 	{
-		if (access("UserRequestFilePaths", 0) != 0)
+		if (_access("UserRequestFilePaths", 0) != 0)
 		{
 			cout << "您输入的是" << UserRequestFilePaths << " " << "您的输入有误请重新输入" << endl;
 			continue;
@@ -27,7 +27,7 @@ void  ParamConf2()
 	cout << "请您输入新的路径" << endl;
 	while (cin >> SimulationFilesPaths)
 	{
-		if (access("UserRequestDilePaths", 0) != 0)
+		if (_access("UserRequestDilePaths", 0) != 0)
 		{
 			cout << "您输入的是" << SimulationFilesPaths << " " << "您的输入有误请重新输入" << endl;
 			continue;

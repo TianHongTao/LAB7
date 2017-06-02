@@ -8,12 +8,12 @@ int SystemInit()
 	int param_lenth;
 	int Check_result = -1;
 	FILE *fp = NULL;
-	if (access("SysConf", 0) != 0)
+	if (_access("SysConf", 0) != 0)
 	{
 		Check_result = 0;
 		return Check_result;
 	}
-	if (access("SysConf/SysParam.txt", 0) != 0)
+	if (_access("SysConf/SysParam.txt", 0) != 0)
 	{
 		Check_result = -1;
 		return Check_result;
@@ -39,7 +39,7 @@ int SystemInit()
 		{
 			if (strcmp(sysparam->param_value, "*") != 0)
 			{
-				if (access("UserRequest", 0))
+				if (_access("UserRequest", 0))
 				{
 					Check_result = -3;
 					fclose(fp);
@@ -67,7 +67,7 @@ int SystemInit()
 		if (strcmp(sysparam->param_name, "SimulationFilePath") == 0) {
 			if (strcmp(sysparam->param_value, "*") != 0)
 			{
-				if (access(sysparam->param_value, 0) != 0)
+				if (_access(sysparam->param_value, 0) != 0)
 				{
 					fclose(fp);
 					Check_result = -4;

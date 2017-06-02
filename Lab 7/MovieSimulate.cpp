@@ -9,7 +9,7 @@ void  MovieSimulate()//动画仿真模块函数
 	strcpy(UserRequestFilePath, temp);
 	strcpy(use, UserRequestFilePath);
 	strcat(use, user_file_name);
-	while (access(use, 0) != 0)
+	while (_access(use, 0) != 0)
 	{
 		printf("指令用户文件不存在\n");
 		cout << "请输入文件名" << endl;
@@ -27,7 +27,7 @@ void  MovieSimulate()//动画仿真模块函数
 		strcpy(UserRequestFilePath, temp);
 		strcpy(use, UserRequestFilePath);
 		strcat(use, user_file_name);
-		while (access(use, 0) != 0)
+		while (_access(use, 0) != 0)
 		{
 			printf("指令用户文件不存在\n");
 			cout << "请输入文件名" << endl;
@@ -48,7 +48,7 @@ void  MovieSimulate()//动画仿真模块函数
 		strcpy(UserRequestFilePath, temp);
 		strcpy(use, UserRequestFilePath);
 		strcat(use, user_file_name);
-		while (access(use, 0) != 0)
+		while (_access(use, 0) != 0)
 		{
 			printf("指令用户文件不存在\n");
 			cout << "请输入文件名" << endl;
@@ -66,7 +66,7 @@ void  MovieSimulate()//动画仿真模块函数
 			strcpy(UserRequestFilePath, temp);
 			strcpy(use, UserRequestFilePath);
 			strcat(use, user_file_name);
-			while (access(use, 0) != 0)
+			while (_access(use, 0) != 0)
 			{
 				printf("指令用户文件不存在\n");
 				cout << "请输入文件名" << endl;
