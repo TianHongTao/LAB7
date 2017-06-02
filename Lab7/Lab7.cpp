@@ -25,6 +25,7 @@ void Menu6();
 void ShowMenu(int Menu_flag);
 int main()
 {
+	//freopen("input.txt","r", stdin);
 	cout << SystemInit() << endl;
 	usercall_list = (USERCALL*)calloc(1, sizeof(USERCALL));
 	response_list = (RESPONSELISTHEADNODE*)calloc(1, sizeof(RESPONSELISTHEADNODE));
